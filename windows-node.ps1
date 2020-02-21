@@ -9,6 +9,10 @@ curl.exe -Lo $kubeletBinPath https://storage.googleapis.com/pks-windows-misc/kub
 curl.exe -Lo "C:\Program Files\windows-node\kubeadm.exe" https://dl.k8s.io/v1.16.2/bin/windows/amd64/kubeadm.exe
 curl.exe -Lo "C:\Program Files\windows-node\wins.exe" https://github.com/rancher/wins/releases/download/v0.0.4/wins.exe
 
+echo "Check what I've downloaded"
+
+ls "c:\Program Files\windows-node\"
+
 # Install and configure Docker and create host network
 docker network create -d nat host
 

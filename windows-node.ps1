@@ -14,6 +14,7 @@ echo "Check what I've downloaded"
 ls "c:\Program Files\windows-node\"
 
 # Install and configure Docker and create host network
+docker pull mcr.microsoft.com/windows/servercore:1809
 docker network create -d nat host
 
 wins.exe srv app run --register
